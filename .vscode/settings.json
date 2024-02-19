@@ -1,0 +1,34 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.linting.banditEnabled": true,
+  "python.linting.banditArgs": ["--config", ".bandit.yml"],
+  "python.linting.mypyEnabled": true,
+  "python.linting.prospectorEnabled": true,
+  "python.linting.prospectorArgs": ["--without-tool", "pylint"],
+  "python.linting.pydocstyleEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "isort.args": ["--profile=black", "--src=${workspaceFolder}"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.unittestEnabled": false,
+  "presentation-mode.configBackup": {
+    "editor.fontSize": "undefined",
+    "editor.matchBrackets": "undefined",
+    "editor.minimap.enabled": "undefined",
+    "editor.scrollbar.verticalScrollbarSize": "undefined",
+    "workbench.activityBar.visible": "undefined",
+    "workbench.statusBar.visible": "undefined",
+    "workbench.colorTheme": "undefined",
+    "workbench.colorCustomizations": "undefined",
+    "window.zoomLevel": "undefined"
+  }
+}
