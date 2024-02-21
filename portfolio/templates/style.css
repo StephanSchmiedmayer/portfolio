@@ -11,3 +11,8 @@ html, body {
 .body-bg {
     @apply bg-slate-100;
 }
+
+.circle-mask {
+    -webkit-mask-image: radial-gradient(circle, white 100%, transparent 100%);
+    mask-image: radial-gradient(circle, white 100%, transparent 100%);
+}

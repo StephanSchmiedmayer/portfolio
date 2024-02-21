@@ -548,11 +548,17 @@ video {
 .flex {
   display: flex;
 }
+.h-1\/5 {
+  height: 20%;
+}
 .h-20 {
   height: 5rem;
 }
 .h-screen {
   height: 100vh;
+}
+.w-auto {
+  width: auto;
 }
 .w-full {
   width: 100%;
@@ -576,6 +582,9 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.overflow-hidden {
+  overflow: hidden;
 }
 .overflow-x-auto {
   overflow-x: auto;
@@ -604,6 +613,10 @@ video {
 }
 .bg-center {
   background-position: center;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-4 {
   padding: 1rem;
@@ -699,6 +712,11 @@ html, body {
 .body-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.circle-mask {
+    -webkit-mask-image: radial-gradient(circle, white 100%, transparent 100%);
+    mask-image: radial-gradient(circle, white 100%, transparent 100%);
 }
 
 .hover\:underline:hover {
