@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build-css": "postcss portfolio/templates/style.css -o portfolio/static/css/style.css",
-    "watch-css": "chokidar 'portfolio/templates/*.css' -c 'npm run build-css'"
+    "watch-css": "chokidar 'portfolio/templates/*' -c 'npm run build-css'"
   },
   "keywords": [],
   "author": "",

@@ -16,3 +16,7 @@ html, body {
     -webkit-mask-image: radial-gradient(circle, white 100%, transparent 100%);
     mask-image: radial-gradient(circle, white 100%, transparent 100%);
 }
+
+.dark-drop-shadow {
+    filter: drop-shadow(0 0 20px rgb(0 0 0));
+}

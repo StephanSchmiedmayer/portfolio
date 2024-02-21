@@ -492,11 +492,14 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
-.sticky {
-  position: sticky;
+.relative {
+  position: relative;
 }
 .bottom-0 {
   bottom: 0px;
@@ -506,6 +509,9 @@ video {
 }
 .top-0 {
   top: 0px;
+}
+.z-10 {
+  z-index: 10;
 }
 .m-4 {
   margin: 1rem;
@@ -535,9 +541,6 @@ video {
 }
 .mt-3 {
   margin-top: 0.75rem;
-}
-.mt-32 {
-  margin-top: 8rem;
 }
 .mt-4 {
   margin-top: 1rem;
@@ -569,6 +572,9 @@ video {
 .flex-row {
   flex-direction: row;
 }
+.flex-col {
+  flex-direction: column;
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -577,6 +583,9 @@ video {
 }
 .justify-center {
   justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -635,6 +644,9 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.pt-32 {
+  padding-top: 8rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -697,6 +709,13 @@ video {
 .ring-black\/5 {
   --tw-ring-color: rgb(0 0 0 / 0.05);
 }
+.drop-shadow {
+  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .backdrop-blur {
   --tw-backdrop-blur: blur(8px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -717,6 +736,10 @@ html, body {
 .circle-mask {
     -webkit-mask-image: radial-gradient(circle, white 100%, transparent 100%);
     mask-image: radial-gradient(circle, white 100%, transparent 100%);
+}
+
+.dark-drop-shadow {
+    filter: drop-shadow(0 0 20px rgb(0 0 0));
 }
 
 .hover\:underline:hover {

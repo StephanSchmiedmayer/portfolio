@@ -5,15 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="body-bg">
     <!-- Header Section -->
-    <header
-      class="bg-cover bg-center h-screen"
-      style="background-image: url('/static/images/munich.jpg')"
-      id="header"
-    >
-      <nav class="bg-transparent text-white text-lg sticky top-0">
+    <div class="relative">
+      <nav class="fixed bg-transparent text-white text-lg top-0 z-10 w-full">
         <ul class="flex justify-center pt-8">
           <div></div>
           <div
@@ -30,114 +27,135 @@
         </ul>
       </nav>
 
-      <!-- Main Content -->
-      <div class="text-center text-white mt-32">
-        <h1 class="text-6xl font-bold">Stephan Schmiedmayer</h1>
-        <p class="text-2xl mt-4">Grad Student CS</p>
-        <p class="text-2xl mt-2">Assistant Researcher @Fraunhofer AISEC</p>
-        <p class="text-2xl mt-2">Computer Vision & Deep Learning</p>
-      </div>
-
-      <!-- Scroll Down Indicator -->
-      <div class="absolute bottom-0 mb-10 w-full text-center background">
-        <span class="text-white py-1 px-4">scroll down</span>
-        <div class="mt-2">
-          <svg
-            class="mx-auto"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+      <div
+        class="bg-cover bg-center h-screen"
+        style="background-image: url('/static/images/munich.jpg')"
+        id="header"
+      >
+        <div
+          class="relative h-screen flex flex-col align-middle justify-between text-center text-white"
+        >
+          <div></div>
+          <!-- Main Content -->
+          <h1 class="text-6xl font-bold pt-32 dark-drop-shadow">
+            Stephan Schmiedmayer
+          </h1>
+          <div class="dark-drop-shadow">
+            <p class="text-2xl mt-4 dark-drop-shadow">Grad Student CS</p>
+            <p class="text-2xl mt-2 dark-drop-shadow">
+              Assistant Researcher @Fraunhofer AISEC
+            </p>
+            <p class="text-2xl mt-2 dark-drop-shadow">
+              Computer Vision & Deep Learning
+            </p>
+          </div>
+          <div></div>
+          <div></div>
+          <!-- Scroll Down Indicator -->
+          <div class="bottom-0 mb-10 w-full text-center background">
+            <span class="text-white py-1 px-4 dark-drop-shadow"
+              >scroll down</span
+            >
+            <div class="mt-2 dark-drop-shadow">
+              <svg
+                class="mx-auto"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 5v14M19 12l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="absolute bottom-0 right-0 mb-4 mr-4 text-slate-600 text-sm"
           >
-            <path d="M12 5v14M19 12l-7 7-7-7"></path>
-          </svg>
+            <a
+              href="https://unsplash.com/@danielsessler?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Daniel Seßler</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/aerial-photo-of-cityscape-during-daytime-euJvKWK3y7s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+          </div>
         </div>
       </div>
-      <div class="absolute bottom-0 right-0 mb-4 mr-4 text-slate-600 text-sm">
-        <a
-          href="https://unsplash.com/@danielsessler?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          >Daniel Seßler</a
-        >
-        on
-        <a
-          href="https://unsplash.com/photos/aerial-photo-of-cityscape-during-daytime-euJvKWK3y7s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          >Unsplash</a
-        >
-      </div>
-    </header>
 
-    <div
-      class="flex flex-row justify-center bg-white text-center p-5 overflow-x-auto whitespace-nowrap"
-      id="logos"
-    >
-      <a href="https://www.tum.de/en/">
-        <img
-          src="static/images/TUM.svg.png"
-          alt="TUM Logo"
-          class="inline-block h-20 mx-2 align-middle"
-        />
-      </a>
-      <a href="https://www.utexas.edu/">
-        <img
-          src="static/images/UT_Austin.png"
-          alt="University of Texas at Austin Logo"
-          class="inline-block h-20 mx-2 align-middle"
-        />
-      </a>
-      <a href="https://www.quartett-mobile.de/index-en.html">
-        <img
-          src="static/images/QM_logo.png"
-          alt="Quartett mobile Logo"
-          class="inline-block h-20 mx-2 align-middle"
-          href="https://www.quartett-mobile.de/index-en.html"
-        />
-      </a>
-      <a href="https://convalid-ai.de/">
-        <img
-          src="static/images/Convalid_short.png"
-          alt="Convalid Analytics Logo"
-          class="inline-block h-20 mx-2 align-middle"
-        />
-      </a>
-      <a href="https://www.aisec.fraunhofer.de/">
-        <img
-          src="static/images/AISEC.png"
-          alt="Fraunhofer AISEC Logo"
-          class="inline-block h-20 mx-2 align-middle"
-        />
-      </a>
-    </div>
-
-    <div id="about-me" class="">
       <div
-        class="h-screen flex items-center justify-center overflow-hidden circle-mask"
+        class="flex flex-row justify-center bg-white text-center p-5 overflow-x-auto whitespace-nowrap"
+        id="logos"
       >
-        <img
-          src="/static/images/Me.jpeg"
-          alt="Circular Image"
-          class="h-1/5 w-auto object-cover"
-        />
+        <a href="https://www.tum.de/en/">
+          <img
+            src="static/images/TUM.svg.png"
+            alt="TUM Logo"
+            class="inline-block h-20 mx-2 align-middle"
+          />
+        </a>
+        <a href="https://www.utexas.edu/">
+          <img
+            src="static/images/UT_Austin.png"
+            alt="University of Texas at Austin Logo"
+            class="inline-block h-20 mx-2 align-middle"
+          />
+        </a>
+        <a href="https://www.quartett-mobile.de/index-en.html">
+          <img
+            src="static/images/QM_logo.png"
+            alt="Quartett mobile Logo"
+            class="inline-block h-20 mx-2 align-middle"
+            href="https://www.quartett-mobile.de/index-en.html"
+          />
+        </a>
+        <a href="https://convalid-ai.de/">
+          <img
+            src="static/images/Convalid_short.png"
+            alt="Convalid Analytics Logo"
+            class="inline-block h-20 mx-2 align-middle"
+          />
+        </a>
+        <a href="https://www.aisec.fraunhofer.de/">
+          <img
+            src="static/images/AISEC.png"
+            alt="Fraunhofer AISEC Logo"
+            class="inline-block h-20 mx-2 align-middle"
+          />
+        </a>
       </div>
-    </div>
 
-    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-      <div
-        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
-      >
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-          >© 2024
-          <a href="https://stephan.schmiedmayer.com/" class="hover:underline"
-            >Stephan Schmiedmayer</a
-          >. All Rights Reserved.
-        </span>
-        <ul
-          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+      <div id="about-me" class="">
+        <div
+          class="h-screen flex items-center justify-center overflow-hidden circle-mask"
         >
-          <!-- <li>
+          <img
+            src="/static/images/Me.jpeg"
+            alt="Circular Image"
+            class="h-1/5 w-auto object-cover"
+          />
+        </div>
+      </div>
+
+      <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+        <div
+          class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+        >
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2024
+            <a href="https://stephan.schmiedmayer.com/" class="hover:underline"
+              >Stephan Schmiedmayer</a
+            >. All Rights Reserved.
+          </span>
+          <ul
+            class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+          >
+            <!-- <li>
             <a href="#" class="hover:underline me-4 md:me-6">About</a>
           </li>
           <li>
@@ -149,8 +167,9 @@
           <li>
             <a href="#" class="hover:underline">Contact</a>
           </li> -->
-        </ul>
-      </div>
-    </footer>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
