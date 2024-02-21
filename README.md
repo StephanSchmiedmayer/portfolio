@@ -28,7 +28,10 @@ Generic Python VSCode template with opinionated configuration.
 
 ### Built with
 
-_Frameworks used for this project._
+- FastAPI
+- Jinja2
+- SASS
+- Tailwind
 
 ## Setup
 
