@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "_Table of content, automatically updates on save via_ yzhang.markdown-all-in-one _._",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build-css": "postcss portfolio/templates/style.css -o portfolio/static/css/style.css",
+    "watch-css": "chokidar 'portfolio/templates/*.css' -c 'npm run build-css'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0"
+  }
+}
