@@ -544,6 +544,9 @@ video {
 .h-screen {
   height: 100vh;
 }
+.max-h-24 {
+  max-height: 6rem;
+}
 .w-full {
   width: 100%;
 }
@@ -558,6 +561,9 @@ video {
 }
 .justify-center {
   justify-content: center;
+}
+.justify-evenly {
+  justify-content: space-evenly;
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -613,10 +619,6 @@ video {
 }
 .text-6xl {
   font-size: 3.75rem;
-  line-height: 1;
-}
-.text-7xl {
-  font-size: 4.5rem;
   line-height: 1;
 }
 .text-lg {
@@ -695,7 +697,7 @@ html, body {
     color: white;
     /* Ensure text is centered if it wraps onto multiple lines */
     text-align: center;
-    filter: blur(2px);
+    /* filter: blur(100px); */
 }
 
 .centered-text {
@@ -704,6 +706,12 @@ html, body {
 
 .text-shadow {
     text-shadow: 0px 0px 30px #000000;
+}
+
+img {
+    display: block;
+    width: auto;
+    height: auto;
 }
 
 .hover\:underline:hover {

@@ -8,18 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- <div class="fullscreen-image-container">
-      <div>
-        <div class="centered-text text-7xl text-shadow">
-          Stephan Schmiedmayer
-        </div>
-        <div class="centered-text text-2xl text-shadow">Software Engineer</div>
-      </div>
-    </div> -->
     <!-- Header Section -->
     <header
       class="bg-cover bg-center h-screen"
       style="background-image: url('/static/images/munich.jpg')"
+      id="header"
     >
       <nav class="bg-transparent text-white text-lg sticky top-0">
         <ul class="flex justify-center pt-8">
@@ -27,8 +20,8 @@
           <div
             class="flex justify-center space-x-4 rounded-xl py-2 px-4 bg-black/40 shadow-lg ring-1 ring-black/5 backdrop-blur"
           >
-            <li><a href="#" class="hover:underline">Home</a></li>
-            <li><a href="#" class="hover:underline">Projects</a></li>
+            <li><a href="#header" class="hover:underline">Home</a></li>
+            <li><a href="#about-me" class="hover:underline">Projects</a></li>
             <li><a href="#" class="hover:underline">Skills</a></li>
             <li><a href="#" class="hover:underline">Experience</a></li>
             <li><a href="#" class="hover:underline">Education</a></li>
@@ -77,6 +70,51 @@
         >
       </div>
     </header>
+
+    <div class="bg-white text-center p-5 overflow-x-auto whitespace-nowrap">
+      <a href="https://www.tum.de/en/">
+        <img
+          src="static/images/TUM.svg.png"
+          alt="TUM Logo"
+          class="inline-block h-20 mx-2 align-middle"
+        />
+      </a>
+      <a href="https://www.utexas.edu/">
+        <img
+          src="static/images/UT_Austin.png"
+          alt="University of Texas at Austin Logo"
+          class="inline-block h-20 mx-2 align-middle"
+        />
+      </a>
+      <a href="https://www.quartett-mobile.de/index-en.html">
+        <img
+          src="static/images/QM_logo.png"
+          alt="Quartett mobile Logo"
+          class="inline-block h-20 mx-2 align-middle"
+          href="https://www.quartett-mobile.de/index-en.html"
+        />
+      </a>
+      <a href="https://convalid-ai.de/">
+        <img
+          src="static/images/Convalid_short.png"
+          alt="Convalid Analytics Logo"
+          class="inline-block h-20 mx-2 align-middle"
+        />
+      </a>
+      <a href="https://www.aisec.fraunhofer.de/">
+        <img
+          src="static/images/AISEC.png"
+          alt="Fraunhofer AISEC Logo"
+          class="inline-block h-20 mx-2 align-middle"
+        />
+      </a>
+    </div>
+
+    <!-- <div id="logos" class="flex fex-row max-h-24 justify-evenly">
+      <img src="/static/images/TUM.svg.png">
+      <img src="/static/images/UT_Austin.png">
+    </img></div> -->
+    <div id="about-me"></div>
 
     <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
       <div

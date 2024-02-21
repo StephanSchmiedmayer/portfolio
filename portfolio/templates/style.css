@@ -28,7 +28,7 @@ html, body {
     color: white;
     /* Ensure text is centered if it wraps onto multiple lines */
     text-align: center;
-    filter: blur(2px);
+    /* filter: blur(100px); */
 }
 
 .centered-text {
@@ -37,4 +37,10 @@ html, body {
 
 .text-shadow {
     text-shadow: 0px 0px 30px #000000;
+}
+
+img {
+    display: block;
+    width: auto;
+    height: auto;
 }
