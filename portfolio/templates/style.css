@@ -20,3 +20,7 @@ html, body {
 .dark-drop-shadow {
     filter: drop-shadow(0 0 20px rgb(0 0 0));
 }
+
+.rounded-circle {
+    border-radius: 50%;
+}
